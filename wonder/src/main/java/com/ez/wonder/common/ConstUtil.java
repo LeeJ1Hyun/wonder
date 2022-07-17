@@ -6,7 +6,7 @@ public interface ConstUtil {
 	int BLOCKSIZE5=5;
 	
 	//자유게시판 페이징 관련 상수
-	public static final int BOARD_RECORD=10;
+	public static final int BOARD_RECORD=5;
 	int BLOCKSIZE=5;
 	
 	//파일 업로드 관련 상수
