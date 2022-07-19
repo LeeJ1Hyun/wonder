@@ -86,10 +86,10 @@
 		$('#chatSendArea').val('');
 	} //function
 	
-	var chatInterval = function(){
-		
-		
-	}
+	var chatInterval = setInterval(function(){
+		var rUserId = $('#nowId').val();
+		getChatDetail(rUserId);
+	},100);
 
 	$(function(){
 		$('.dash-msg-inbox li').each(function(item,idx){
@@ -104,6 +104,7 @@
 				$('#chatSendArea').attr( "placeholder","내용을 입력해주세요");
 				$('#chatCommentContainer').scrollTop($('#chatCommentContainer').height());
 				
+				//chatInterval();
 			});
 			
 			
