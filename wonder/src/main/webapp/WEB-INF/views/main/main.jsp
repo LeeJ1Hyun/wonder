@@ -221,10 +221,6 @@ class="item">
 													</div>
 													
 													
-													
-													
-													
-													
 													<div class="">
 														<p>&nbsp;||${vo.frame}</p>
 													</div>

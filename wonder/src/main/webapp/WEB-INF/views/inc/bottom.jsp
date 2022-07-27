@@ -233,6 +233,8 @@
 		Kakao.Auth.login({
 	        success: function(authObj) {
 	          //2. 로그인 성공시, API 호출
+	          
+	          
 	          Kakao.API.request({
 	            url: '/v2/user/me',
 	            success: function(res) {
@@ -261,11 +263,13 @@
 		<img width="100%" src="<c:url value='/img/kakao_login_large_wide.png'/>">
 	</a>
 				</div>
+	
+	
 	<form id="form-kakao-login" method="post" action="<c:url value='/member/kakaoLogin'/>">
 			<input type="hidden" name="email"/>
 			<input type="hidden" name="nick"/>
 			<input type="hidden" name="img"/>
-			</form>
+	</form>
 
 		
 	</div>

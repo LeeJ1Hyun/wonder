@@ -55,9 +55,9 @@ public class MemberController {
 			session.setAttribute("type", memVo.getType());
 			session.setAttribute("LoginType", "normal");
 
-			logger.info("이름!!!!!!!!vo.getUserId={}", vo.getUserId());
-			logger.info("이름!!!!!!!!memVo.getName={}", memVo.getName());
-			logger.info("유저 타입!!!!!!!!memVo.getType={}", memVo.getType());
+			logger.info("유저 아이디, vo.getUserId={}", vo.getUserId());
+			logger.info("회원 이름, memVo.getName={}", memVo.getName());
+			logger.info("유저 타입, memVo.getType={}", memVo.getType());
 			msg=memVo.getUserId()+"님 로그인되었습니다.";
 			url="/";
 		}else if(result==MemberService.DISAGREE_PWD) {	
@@ -298,7 +298,6 @@ public class MemberController {
 		int result=0;
 		
 		if(pwd!=null && !pwd.isEmpty()) {
-			logger.info("if문 내용");
 			result=1;
 		}
 		return result;

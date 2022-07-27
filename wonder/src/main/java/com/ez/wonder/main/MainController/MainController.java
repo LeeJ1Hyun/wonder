@@ -41,10 +41,8 @@ public class MainController {
 		List<MainPdVO> list =mainPdService.mainPdList();
 		//1.vo가 담길 list 
 		
-		
 		List<List<MainPdVO>> resList = new ArrayList<List<MainPdVO>>();
 		//3.vo가 4개 들어있는 list를 담을 최종 list 
-		
 		
 		int chk = 0;
 		while(true) {
